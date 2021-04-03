@@ -1,0 +1,14 @@
+{
+    "name": "Amazon Scraper",
+    "description": "A Php Made Script To Scrape Data From Amazon",
+    "keywords": [
+        "amazon",
+        "php",
+        "noobsgang"
+    ],
+    "website": "https://noobgang.in",
+    "repository": "https://github.com/NoobsGang/AmazonScraper",
+    "success_url": "/",
+    "env": {},
+    "image": "heroku/php"
+}
