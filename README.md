@@ -12,23 +12,22 @@ https://{your-deployed-herokuapp-name}.herokuapp.com/?query={search-query}
 
 Example :
 https://php-amazon-scraper.herokuapp.com/?query=Mobile
-'''
 ```
 *Response*
 ```
 {
-    "query": "Samsung+Mobile",
-    "search_link": "https://www.amazon.in/s?k=Samsung+Mobile",
-    "total_results": 18,
+    "query": "Mobile",
+    "search_link": "https://www.amazon.in/s?k=Mobile",
+    "total_results": 22,
     "results": [
         {
-            "name": "Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span",
-            "image": "https://m.media-amazon.com/images/I/71-Su4Wr0HL._SL1000_.jpg",
-            "product_link": "https://www.amazon.in/Samsung-Galaxy-Ocean-128GB-Storage/dp/B07HGGYWL6/ref=sr_1_1",
-            "sale_price": "₹16,499",
-            "real_price": "₹19,999",
-            "rating": "4.3 out of 5 stars",
-            "product_api_link": "http://php-amazon-scraper.herokuapp.com/product.php?query=/Samsung-Galaxy-Ocean-128GB-Storage/dp/B07HGGYWL6/ref=sr_1_1"
+            "name": "Redmi 9A (Nature Green, 2GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span",
+            "image": "https://m.media-amazon.com/images/I/71sxlhYhKWL._SL1000_.jpg",
+            "product_link": "https://www.amazon.in/Redmi-9A-2GB-32GB-Storage/dp/B08696XB4B/ref=sr_1_3",
+            "sale_price": "₹6,799",
+            "real_price": "₹8,499",
+            "rating": "4.2 out of 5 stars",
+            "product_api_link": "http://php-amazon-scraper.herokuapp.com/product.php?query=/Redmi-9A-2GB-32GB-Storage/dp/B08696XB4B/ref=sr_1_3"
         },
         .....continues
 ```
@@ -38,7 +37,7 @@ https://php-amazon-scraper.herokuapp.com/?query=Mobile
 *Request*
 ```
 https://{your-deployed-herokuapp-name}.herokuapp.com/product.php?query={search-query}
->> Get Your {search-query} From Search Api.
+>> Get Your {search-query} From Search Api Or Directly Use The product_api_link.
 
 Example :
 https://php-amazon-scraper.herokuapp.com/product.php?query=/Redmi-9A-2GB-32GB-Storage/dp/B08696XB4B/ref=sr_1_3
@@ -67,3 +66,9 @@ https://php-amazon-scraper.herokuapp.com/product.php?query=/Redmi-9A-2GB-32GB-St
     }
 }
 ```
+
+### Deploying
+- You Can Deploy To Heroku By The Button Below Or Download The Zip File Of This Repository And Upload Them On Any PHP Hosting (Free Or Paid) And You Can Run
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+#### Contact Us On [Telegram](https://telegram.im/@NoobsTalk) If You Face Any Issues..
