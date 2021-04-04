@@ -1,6 +1,6 @@
 # AmazonScraper
 
-## Amazon India Website Scraper Made With PHP. Inspired By : [This Project](https://telegram.dog/tprojects)
+## Amazon India Website Scraper Made With PHP. Inspired By : [This Project](https://github.com/cachecleanerjeet/amazon-scraper)
 
 ### API USAGE
 
@@ -69,6 +69,8 @@ https://php-amazon-scraper.herokuapp.com/product.php?query=/Redmi-9A-2GB-32GB-St
 
 ### Deploying
 - You Can Deploy To Heroku By The Button Below Or Download The Zip File Of This Repository And Upload Them On Any PHP Hosting (Free Or Paid) And You Can Run
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-#### Contact Us On [Telegram](https://telegram.im/@NoobsTalk) If You Face Any Issues..
+#### Join Us On [Telegram](https://telegram.dog/NoobsGang)
+#### Contact Us On [Telegram](https://telegram.dog/NoobsTalk) If You Face Any Issues..
