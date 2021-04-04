@@ -25,12 +25,29 @@ for ($i=1; $i <$count ; $i++) {
 	$features[$c] = str_replace(array("\n", "\r"), '', $fea);
 	$c++;
 }
-$sale_price = explode('<span id="mbc-price-2" class="a-size-medium a-color-price">', $base)[1];
+$sale_price = explode('<span id="priceblock_ourprice" class="a-size-medium a-color-price priceBlockBuyingPriceString">', $base)[1];
 $sale_price = explode('</span>', $sale_price)[0];
-$sale_price = str_replace(array("\n", "\r"), '', $sale_price);
 
 $original_price = explode('<span class="priceBlockStrikePriceString a-text-strike">', $base)[1];
 $original_price = explode('</span>', $original_price)[0];
+if($sale_price == ""){
+	$sale_price = explode('<span id="priceblock_dealprice" class="a-size-medium a-color-price priceBlockDealPriceString">', $base)[1];
+	$sale_price = explode('</span>', $sale_price)[0];
+
+	$original_price = explode('<span class="priceBlockStrikePriceString a-text-strike">', $base)[1];
+	$original_price = explode('</span>', $original_price)[0];
+
+}
+if($original_price == ""){
+	$sale_price = explode('<span id="priceblock_dealprice" class="a-size-medium a-color-price priceBlockDealPriceString">', $base)[1];
+	$sale_price = explode('</span>', $sale_price)[0];
+
+	$original_price = explode('<span id="priceblock_ourprice" class="a-size-medium a-color-price priceBlockBuyingPriceString">', $base)[1];
+	$original_price = explode('</span>', $original_price)[0];	
+}
+if($original_price == ""){
+	$original_price = $sale_price;
+}
 
 $name = explode('<span id="productTitle" class="a-size-large product-title-word-break">', $base)[1];
 $name = explode('</span>', $name)[0];
