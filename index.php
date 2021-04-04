@@ -45,11 +45,11 @@ for ($i=1; $i <$count ; $i++) {
 		$rating = explode('<span class="a-icon-alt">',$amaz)[1];
 		$rating = explode('</span>',$rating)[0];
 		$result['results'][$c]['rating'] = $rating;
+		$result['results'][$c]['product_api_link'] = 'http://'.$_SERVER['HTTP_HOST'].'/product.php?query='.$product_link.'';
 		$c++;
 	}
 }
-$result['product_api_link'] = 'http://'.$_SERVER['HTTP_HOST'].'/product.php?query='.$product_link.'';
-$result = json_encode($result,JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+$result = json_encode($result,JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 header("Content-Type: application/json");
 echo $result;
 	$amaz = explode('<div class="a-section aok-relative s-image-fixed-height">',$amzda)[1];
