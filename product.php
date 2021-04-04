@@ -26,7 +26,7 @@ for ($i=1; $i <$count ; $i++) {
 	$c++;
 }
 $sale_price = explode('<span id="priceblock_ourprice" class="a-size-medium a-color-price priceBlockBuyingPriceString">', $base)[1];
-$sale_price = explode('</span>', $sale_price)[0];
+echo $sale_price = explode('</span>', $sale_price)[0];
 
 $original_price = explode('<span class="priceBlockStrikePriceString a-text-strike">', $base)[1];
 $original_price = explode('</span>', $original_price)[0];
