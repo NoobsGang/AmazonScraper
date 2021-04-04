@@ -7,15 +7,15 @@
 ### Search Products Api
 
 *Request*
-'''
+```
 https://{your-deployed-herokuapp-name}.herokuapp.com/?query={search-query}
 
 Example :
 https://php-amazon-scraper.herokuapp.com/?query=Mobile
 '''
-
+```
 *Response*
-'''
+```
 {
     "query": "Samsung+Mobile",
     "search_link": "https://www.amazon.in/s?k=Samsung+Mobile",
@@ -31,21 +31,21 @@ https://php-amazon-scraper.herokuapp.com/?query=Mobile
             "product_api_link": "http://php-amazon-scraper.herokuapp.com/product.php?query=/Samsung-Galaxy-Ocean-128GB-Storage/dp/B07HGGYWL6/ref=sr_1_1"
         },
         .....continues
-'''
+```
 
 ### Product Info Api
 
 *Request*
-'''
+```
 https://{your-deployed-herokuapp-name}.herokuapp.com/product.php?query={search-query}
 >> Get Your {search-query} From Search Api.
 
 Example :
 https://php-amazon-scraper.herokuapp.com/product.php?query=/Redmi-9A-2GB-32GB-Storage/dp/B08696XB4B/ref=sr_1_3
-'''
+```
 
 *Response*
-'''
+```
 {
     "success": true,
     "query": "/Redmi-9A-2GB-32GB-Storage/dp/B08696XB4B/ref=sr_1_3",
@@ -66,4 +66,4 @@ https://php-amazon-scraper.herokuapp.com/product.php?query=/Redmi-9A-2GB-32GB-St
         ]
     }
 }
-'''
+```
