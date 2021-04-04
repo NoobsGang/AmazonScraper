@@ -1,6 +1,11 @@
 <?php
 error_reporting(0);
 $query = urlencode($_GET['query']);
+if($query == ""){
+	header("Content-Type: application/json");
+	echo json_encode(array("success"=>false,"error"=>"Please Give A Valid Query"),JSON_PRETTY_PRINT);
+	die();
+}
 $url = "https://www.amazon.in/s?k=$query";
 $data = '';
 $headers = array('X-Forwarded-For: '.long2ip(mt_rand()).'');
