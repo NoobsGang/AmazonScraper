@@ -67,7 +67,7 @@ $result = array();
 $result['success'] = true;
 $result['query'] = $query;
 $result['product_details'] = $product_details;
-$result = json_encode($result,JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+$result = json_encode($result,JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 header("Content-Type: application/json");
 echo $result;
 
